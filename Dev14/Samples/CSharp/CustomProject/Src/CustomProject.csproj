@@ -119,9 +119,15 @@
     <None Include="extension.vsixmanifest">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Templates\ProjectItems\MyCustomProject\Class.cs" />
-    <None Include="Templates\Projects\MyCustomProject\AssemblyInfo.cs" />
-    <None Include="Templates\Projects\MyCustomProject\Program.cs" />
+    <Content Include="Templates\ProjectItems\MyCustomProject\Class.cs">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Templates\Projects\MyCustomProject\AssemblyInfo.cs">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Templates\Projects\MyCustomProject\Program.cs">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources.resx">
@@ -135,9 +141,13 @@
   <ItemGroup>
     <EmbeddedResource Include="Resources\MyCustomProjectImageList.bmp" />
     <None Include="source.extension.vsixmanifest" />
-    <Content Include="Templates\Projects\MyCustomProject\MyCustomProject.ico" />
+    <Content Include="Templates\Projects\MyCustomProject\MyCustomProject.ico">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
     <None Include="Key.snk" />
-    <None Include="Templates\Projects\MyCustomProject\MyCustomProject.myproj" />
+    <Content Include="Templates\Projects\MyCustomProject\MyCustomProject.myproj">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0">
