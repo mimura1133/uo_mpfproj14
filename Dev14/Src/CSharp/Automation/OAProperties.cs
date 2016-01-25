@@ -191,9 +191,13 @@ namespace Microsoft.VisualStudio.Project.Automation
             if(index is string)
             {
                 string indexAsString = (string)index;
-                if(this.properties.ContainsKey(indexAsString))
+                if (this.properties.ContainsKey(indexAsString))
                 {
-                    return (EnvDTE.Property)this.properties[indexAsString];
+                    return (EnvDTE.Property) this.properties[indexAsString];
+                }
+                else
+                {
+                    return new OANullProperty(null);
                 }
             }
             else if(index is int)
